@@ -24,7 +24,8 @@ Q:
 
 2. Qual o número de indicações por categoria agrupadas por categoria?
 
-R: ```{_id: 'DIRECTING', total_indicacoes: 469}
+R: ```
+{_id: 'DIRECTING', total_indicacoes: 469}
 {_id: 'FILM EDITING', total_indicacoes: 450}
 {_id: 'ACTRESS IN A SUPPORTING ROLE', total_indicacoes: 440}
 {_id: 'ACTOR IN A SUPPORTING ROLE', total_indicacoes: 440}
@@ -124,7 +125,7 @@ R: ```{_id: 'DIRECTING', total_indicacoes: 469}
 {_id: 'OUTSTANDING PICTURE', total_indicacoes} 
 ```
 
-Q: ```db.registros.aggregate([
+Q: db.registros.aggregate([
   {
     $group: {
       _id: "$categoria",  
@@ -134,7 +135,7 @@ Q: ```db.registros.aggregate([
   {
     $sort: { total_indicacoes: -1 } 
   }
-]);```
+]);
 
 ------
 
