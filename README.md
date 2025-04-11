@@ -5,6 +5,8 @@ Nos arquivos **JSON**, contém a base de indicados ao Oscar em formato SQL para 
 
 *Abaixo, as atividades a serem feitas com suas respectivas repostas.*
 
+Obs.: tabela resgistros (referenciada nas atividades) = tabela indicados
+
 ------
 
 ✅ Atualize os registros da tabela com os dados do Oscar 2025
@@ -13,9 +15,10 @@ Nos arquivos **JSON**, contém a base de indicados ao Oscar em formato SQL para 
 
 1. Qual o total de registros na tabela indicados?
 
-R: 
+R: 11020
 
-Q:
+Q: 
+```db.registros.count()```
 
 ------
 
