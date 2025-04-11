@@ -166,7 +166,9 @@ R:
 
 ```
 
-Q: ``` db.registros.aggregate([
+Q: 
+```
+db.registros.aggregate([
   {
     $group: {
       _id: "$categoria",  
@@ -176,7 +178,8 @@ Q: ``` db.registros.aggregate([
   {
     $sort: { total_indicacoes: -1 } 
   }
-]); ```
+]);
+```
 
 ------
 
