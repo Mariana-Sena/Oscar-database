@@ -166,7 +166,7 @@ R:
 
 ```
 
-Q: db.registros.aggregate([
+Q: ``` db.registros.aggregate([
   {
     $group: {
       _id: "$categoria",  
@@ -176,7 +176,7 @@ Q: db.registros.aggregate([
   {
     $sort: { total_indicacoes: -1 } 
   }
-]);
+]); ```
 
 ------
 
@@ -184,7 +184,7 @@ Q: db.registros.aggregate([
 
 R: 3 vezes
 
-Q:
+Q:  ``` db.registros.count({ nome_do_indicado: "Natalie Portman" }) ```
 
 ------
 
