@@ -24,7 +24,8 @@ Q:
 
 2. Qual o número de indicações por categoria agrupadas por categoria?
 
-R: ```
+R: 
+```
 {_id: 'DIRECTING', total_indicacoes: 469}
 {_id: 'FILM EDITING', total_indicacoes: 450}
 {_id: 'ACTRESS IN A SUPPORTING ROLE', total_indicacoes: 440}
@@ -122,7 +123,47 @@ R: ```
 {_id: 'MUSIC (Scoring: Original Song Score and Adaptation -or- Scoring: Adaptation)', total_indicacoes: 9}
 {_id: 'MUSIC (Scoring: Adaptation and Original Song Score)', total_indicacoes: 8}
 {_id: 'MUSIC (Original Song Score)', total_indicacoes: 8}
-{_id: 'OUTSTANDING PICTURE', total_indicacoes} 
+{_id: 'OUTSTANDING PICTURE', total_indicacoes: 8}
+{_id: 'MUSIC (Original Song Score and Its Adaptation -or- Adaptation Score)', total_indicacoes: 6}
+{_id: 'SHORT SUBJECT (Color)', total_indicacoes: 6}
+{_id: 'MUSIC (Original Song Score and Its Adaptation or Adaptation Score)', total_indicacoes: 6}
+{_id: 'Best Actor', total_indicacoes: 5}
+{_id: 'Best Sound', total_indicacoes: 5}
+{_id: 'Best Original Score', total_indicacoes: 5}
+{_id: 'Best Animated Short Film', total_indicacoes: 5}
+{_id: 'WRITING (Screenplay--Original)', total_indicacoes: 5}
+{_id: 'WRITING (Screenplay--Original)', total_indicacoes: 5}
+{_id: 'Best Film Editing', total_indicacoes: 5}
+{_id: 'Best Supporting Actress', total_indicacoes: 5}
+{_id: 'HONORARY FOREIGN LANGUAGE FILM AWARD', total_indicacoes: 5}
+{_id: 'WRITING (Story and Screenplay--based on material not previously published or produced)', total_indicacoes: 5}
+{_id: 'Best Adapted Screenplay', total_indicacoes: 5}
+{_id: 'Best Visual Effects', total_indicacoes: 5}
+{_id: 'Best Makeup and Hairstyling', total_indicacoes: 5}
+{_id: 'Best Cinematography', total_indicacoes: 5}
+{_id: 'Best Live Action Short Film', total_indicacoes: 5}
+{_id: 'Best Original Song', total_indicacoes: 5}
+{_id: 'Best Original Screenplay', total_indicacoes: 5}
+{_id: 'WRITING (Screenplay--Adapted)', total_indicacoes: 5}
+{_id: 'Best Documentary Feature', total_indicacoes: 5}
+{_id: 'Best Directing', total_indicacoes: 5}
+{_id: 'SPECIAL ACHIEVEMENT AWARD (Sound Effects Editing)', total_indicacoes: 4}
+{_id: 'UNIQUE AND ARTISTIC PICTURE', total_indicacoes: 3}
+{_id: 'MUSIC (Adaptation Score)', total_indicacoes: 3}
+{_id: 'WRITING (Title Writing)', total_indicacoes: 3}
+{_id: 'ENGINEERING EFFECTS', total_indicacoes: 3}
+{_id: 'DIRECTING (Dramatic Picture)', total_indicacoes: 3}
+{_id: 'SHORT FILM (Dramatic Live Action)', total_indicacoes: 3}
+{_id: 'SPECIAL ACHIEVEMENT AWARD', total_indicacoes: 3}
+{_id: 'MUSIC (Original Song Score or Adaptation Score)', total_indicacoes: 3}
+{_id: 'DIRECTING (Comedy Picture)', total_indicacoes: 2}
+{_id: 'SPECIAL FOREIGN LANGUAGE FILM AWARD', total_indicacoes: 2}
+{_id: 'SPECIAL ACHIEVEMENT AWARD (Sound Effects)', total_indicacoes: 1}
+{_id: 'SPECIAL ACHIEVEMENT AWARD (Sound Effects)', total_indicacoes: 1}
+{_id: null, total_indicacoes: 1}
+{_id: 'GORDON E. SAWYER AWARD', total_indicacoes: 1}
+{_id: 'AWARD OF COMMENDATION', total_indicacoes: 1}
+
 ```
 
 Q: db.registros.aggregate([
