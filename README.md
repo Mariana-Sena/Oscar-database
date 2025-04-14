@@ -633,6 +633,7 @@ R: Para a categoria Atriz, foi Janet Gaynor, em 1928. Por outro lado, para de fa
 Q: ``` db.registros.find({ categoria: "ACTRESS", vencedor: "true" }).sort({ ano_cerimonia: 1 }).limit(1); ```
 ou
  ``` db.registros.find({ categoria: "Best Actress", vencedor: "true" }).sort({ ano_cerimonia: 1 }).limit(1); ```
+ 
 ------
 
 12. Na campo "Vencedor", altere todos os valores com "true" para 1 e todos os valores "false" para 0.
