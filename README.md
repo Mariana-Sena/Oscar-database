@@ -24,7 +24,7 @@ Q:
 
 2. Qual o número de indicações por categoria agrupadas por categoria?
 
-R: <details>
+R: <details> <summary>Veja mais sobre o propósito do projeto</summary>
 ```
 {_id: 'DIRECTING', total_indicacoes: 469}
 {_id: 'FILM EDITING', total_indicacoes: 450}
