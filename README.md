@@ -679,39 +679,173 @@ ou<br>
 
 15. Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser.
 
-R: 3 vezes
+R: Filmes adicionados com sucesso! A mensagem de retorno foi:
+```
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67fc9205d211ec91a9eef21b'),
+    '1': ObjectId('67fc9205d211ec91a9eef21c'),
+    '2': ObjectId('67fc9205d211ec91a9eef21d')
+  }
+}
+```
 
-Q:
-
+Q: 
+```
+db.registros.insertMany([
+  {
+    id_registro: 11021,
+    ano_filmagem: 2009,
+    categoria: "Academy Award for Best Adapted Screenplay",
+    nome_do_filme: "Hachi: A Dog's Tale"
+  },
+  {
+    id_registro: 11022,
+    ano_filmagem: 2007,
+    categoria: "Academy Award for Best Adapted Screenplay",
+    nome_do_filme: "Bridge to Terabithia"
+  },
+  {
+    id_registro: 11023,
+    ano_filmagem: 1993,
+    categoria: "Academy Award for Best Adapted Screenplay",
+    nome_do_filme: "Alive"
+  }
+]);
+```
 ------
 
 16. Denzel Washington já ganhou algum Oscar?
 
-R: 3 vezes
+R: Não.
 
-Q:
+Q: ``` db.registros.countDocuments({ nome_do_indicado: "Denzel Washington", vencedor: "true" }); ```
 
 ------
 
 17. Quais os filmes que ganharam o Oscar de Melhor Filme?
 
-R: 3 vezes
+R: Considerando que hoje se chama "Best Picture" para a categoria de Melhor Filme, o filme premiado é Anora. Entretando, considerando que ao longo da história já houvream outros nomes para essa mesma categoria, os vencedores são:
+<details> <summary>Clique para ver os filmes</summary>
+```
+  { nome_do_filme: 'Wings' }
+{ nome_do_filme: 'The Broadway Melody' }
+{ nome_do_filme: 'Going My Way' }
+{ nome_do_filme: 'The Lost Weekend' }
+{ nome_do_filme: 'The Best Years of Our Lives' }
+{ nome_do_filme: "Gentleman's Agreement" }
+{ nome_do_filme: 'Hamlet' }
+{ nome_do_filme: "All the King's Men" }
+{ nome_do_filme: 'All about Eve' }
+{ nome_do_filme: 'An American in Paris' }
+{ nome_do_filme: 'The Greatest Show on Earth' }
+{ nome_do_filme: 'From Here to Eternity' }
+{ nome_do_filme: 'On the Waterfront' }
+{ nome_do_filme: 'Marty' }
+{ nome_do_filme: 'Around the World in 80 Days' }
+{ nome_do_filme: 'The Bridge on the River Kwai' }
+{ nome_do_filme: 'Gigi' }
+{ nome_do_filme: 'Ben-Hur' }
+{ nome_do_filme: 'The Apartment' }
+{ nome_do_filme: 'West Side Story' }
+{ nome_do_filme: 'Lawrence of Arabia' }
+{ nome_do_filme: 'Tom Jones' }
+{ nome_do_filme: 'My Fair Lady' }
+{ nome_do_filme: 'The Sound of Music' }
+{ nome_do_filme: 'A Man for All Seasons' }
+{ nome_do_filme: 'In the Heat of the Night' }
+{ nome_do_filme: 'Oliver!' }
+{ nome_do_filme: 'Midnight Cowboy' }
+{ nome_do_filme: 'Patton' }
+{ nome_do_filme: 'The French Connection' }
+{ nome_do_filme: 'The Godfather' }
+{ nome_do_filme: 'The Sting' }
+{ nome_do_filme: 'The Godfather Part II' }
+{ nome_do_filme: "One Flew over the Cuckoo's Nest" }
+{ nome_do_filme: 'Rocky' }
+{ nome_do_filme: 'Annie Hall' }
+{ nome_do_filme: 'The Deer Hunter' }
+{ nome_do_filme: 'Kramer vs. Kramer' }
+{ nome_do_filme: 'Ordinary People' }
+{ nome_do_filme: 'Chariots of Fire' }
+{ nome_do_filme: 'Gandhi' }
+{ nome_do_filme: 'Terms of Endearment' }
+{ nome_do_filme: 'Amadeus' }
+{ nome_do_filme: 'Out of Africa' }
+{ nome_do_filme: 'Platoon' }
+{ nome_do_filme: 'The Last Emperor' }
+{ nome_do_filme: 'Rain Man' }
+{ nome_do_filme: 'Driving Miss Daisy' }
+{ nome_do_filme: 'Dances With Wolves' }
+{ nome_do_filme: 'The Silence of the Lambs' }
+{ nome_do_filme: 'Unforgiven' }
+{ nome_do_filme: "Schindler's List" }
+{ nome_do_filme: 'Forrest Gump' }
+{ nome_do_filme: 'Braveheart' }
+{ nome_do_filme: 'The English Patient' }
+{ nome_do_filme: 'Titanic' }
+{ nome_do_filme: 'Shakespeare in Love' }
+{ nome_do_filme: 'American Beauty' }
+{ nome_do_filme: 'Gladiator' }
+{ nome_do_filme: 'A Beautiful Mind' }
+{ nome_do_filme: 'Chicago' }
+{ nome_do_filme: 'The Lord of the Rings: The Return of the King' }
+{ nome_do_filme: 'Million Dollar Baby' }
+{ nome_do_filme: 'Crash' }
+{ nome_do_filme: 'The Departed' }
+{ nome_do_filme: 'No Country for Old Men' }
+{ nome_do_filme: 'Slumdog Millionaire' }
+{ nome_do_filme: 'The Hurt Locker' }
+{ nome_do_filme: "The King's Speech" }
+{ nome_do_filme: 'The Artist' }
+{ nome_do_filme: 'Argo' }
+{ nome_do_filme: '12 Years a Slave' }
+{ nome_do_filme: 'Birdman or (The Unexpected Virtue of Ignorance)' }
+{ nome_do_filme: 'Spotlight' }
+{ nome_do_filme: 'Moonlight' }
+{ nome_do_filme: 'The Shape of Water' }
+{ nome_do_filme: 'Green Book' }
+{ nome_do_filme: 'Parasite' }
+{ nome_do_filme: 'Nomadland' }
+{ nome_do_filme: 'CODA' }
+{ nome_do_filme: 'Everything Everywhere All at Once' }
+{ nome_do_filme: 'Oppenheimer' }
+{ nome_do_filme: 'Anora' }
+```
+</details>
 
-Q:
-
+Q: Consideração 1 -> 
+``` 
+db.registros.find(
+  { categoria: "Best Picture", vencedor: 1 },
+  { nome_do_filme: 1, _id: 0 }
+);
+```
+<br>
+Consideração 2 ->
+```
+db.registros.find(
+  {
+    categoria: { $in: ["BEST PICTURE", "BEST MOTION PICTURE", "OUTSTANDING PICTURE", "BEST PRODUCTION"] },
+    vencedor: 1
+  },
+  { nome_do_filme: 1, _id: 0 }
+);
+```
 ------
 
 18. Sidney Poitier foi o primeiro ator negro a ser indicado ao Oscar. Em que ano ele foi indicado? Por qual filme?
 
-R: 3 vezes
+R: Ele foi indicado em 1958, pelo filme "The Defiant Ones" (Acorrentados, em português).
 
-Q:
+Q: ``` db.registros.find({ nome_do_indicado: "Sidney Poitier" }).sort({ ano_cerimonia: 1 }).limit(1); ```
 
 ------
 
 19. Quais os filmes que ganharam o Oscar de Melhor Filme e Melhor Diretor na mesma cerimonia?
 
-R: 3 vezes
+R: 
 
 Q:
 
