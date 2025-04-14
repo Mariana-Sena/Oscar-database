@@ -824,8 +824,8 @@ db.registros.find(
 );
 ```
 <br>
-Consideração 2 ->
-```
+Consideração 2 -> 
+``` 
 db.registros.find(
   {
     categoria: { $in: ["BEST PICTURE", "BEST MOTION PICTURE", "OUTSTANDING PICTURE", "BEST PRODUCTION"] },
@@ -834,7 +834,6 @@ db.registros.find(
   { nome_do_filme: 1, _id: 0 }
 );
 ```
-
 ------
 
 18. Sidney Poitier foi o primeiro ator negro a ser indicado ao Oscar. Em que ano ele foi indicado? Por qual filme?
