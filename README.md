@@ -848,10 +848,123 @@ Q: ``` db.registros.find({ nome_do_indicado: "Sidney Poitier" }).sort({ ano_ceri
 
 19. Quais os filmes que ganharam o Oscar de Melhor Filme e Melhor Diretor na mesma cerimonia?
 
-R: 
+R: <details> <summary>Veja aqui todos os filmes que ganharam o Oscar de Melhor Filme e Melhor Diretor na mesma cerimonia.</summary>
+```
+{filmes: ['The Artist'], diretores: ['Thomas Langmann, Producer'], ano_cerimonia: 2012}
+{ filmes: [ 'In the Heat of the Night' ], diretores: [ 'Walter Mirisch, Producer' ], ano_cerimonia: 1968 }
+{ filmes: [ 'The Godfather Part II' ], diretores: [ 'Francis Ford Coppola, Producer;  Gray Frederickson and Fred Roos, Co-Producers' ], ano_cerimonia: 1975 }
+{ filmes: [ 'Titanic' ], diretores: [ 'James Cameron and Jon Landau, Producers' ], ano_cerimonia: 1998 }
+{ filmes: [ 'The Shape of Water' ], diretores: [ 'Guillermo del Toro and J. Miles Dale, Producers' ], ano_cerimonia: 2018 }
+{ filmes: [ 'Green Book' ], diretores: [ 'Jim Burke, Charles B. Wessler, Brian Currie, Peter Farrelly and Nick Vallelonga, Producers' ], ano_cerimonia: 2019 }
+{ filmes: [ 'The Best Years of Our Lives' ], diretores: [ 'Samuel Goldwyn Productions' ], ano_cerimonia: 1947 }
+{ filmes: [ 'An American in Paris' ], diretores: [ 'Arthur Freed, Producer' ], ano_cerimonia: 1952 }
+{ filmes: [ 'Ordinary People' ], diretores: [ 'Ronald L. Schwary, Producer' ], ano_cerimonia: 1981 }
+{ filmes: [ 'Chariots of Fire' ], diretores: [ 'David Puttnam, Producer' ], ano_cerimonia: 1982 }
+{ filmes: [ "One Flew over the Cuckoo's Nest" ], diretores: [ 'Saul Zaentz and Michael Douglas, Producers' ], ano_cerimonia: 1976 }
+{ filmes: [ 'No Country for Old Men' ], diretores: [ 'Scott Rudin, Ethan Coen and Joel Coen, Producers' ], ano_cerimonia: 2008 }
+{ filmes: [ 'CODA' ], diretores: [ 'Philippe Rousselet, Fabrice Gianfermi and Patrick Wachsberger, Producers' ], ano_cerimonia: 2022 }
+{ filmes: [ 'Everything Everywhere All at Once' ], diretores: [ 'Daniel Kwan, Daniel Scheinert and Jonathan Wang, Producers' ], ano_cerimonia: 2023 }
+{ filmes: [ 'Hamlet' ], diretores: [ 'J. Arthur Rank-Two Cities Films' ], ano_cerimonia: 1949 }
+{ filmes: [ 'Forrest Gump' ], diretores: [ 'Wendy Finerman, Steve Tisch and Steve Starkey, Producers' ], ano_cerimonia: 1995 }
+{ filmes: [ 'Argo' ], diretores: [ 'Grant Heslov, Ben Affleck and George Clooney, Producers' ], ano_cerimonia: 2013 }
+{ filmes: [ 'Marty' ], diretores: [ 'Harold Hecht, Producer' ], ano_cerimonia: 1956 }
+{ filmes: [ 'The Bridge on the River Kwai' ], diretores: [ 'Sam Spiegel, Producer' ], ano_cerimonia: 1958 }
+{ filmes: [ 'The Deer Hunter' ], diretores: [ 'Barry Spikings, Michael Deeley, Michael Cimino and John Peverall, Producers' ], ano_cerimonia: 1979 }
+{ filmes: [ 'From Here to Eternity' ], diretores: [ 'Buddy Adler, Producer' ], ano_cerimonia: 1954 }
+{ filmes: [ 'The Last Emperor' ], diretores: [ 'Jeremy Thomas, Producer' ], ano_cerimonia: 1988 }
+{ filmes: [ 'Dances With Wolves' ], diretores: [ 'Jim Wilson and Kevin Costner, Producers' ], ano_cerimonia: 1991 }
+{ filmes: [ 'Shakespeare in Love' ], diretores: [ 'David Parfitt, Donna Gigliotti, Harvey Weinstein, Edward Zwick and Marc Norman, Producers' ], ano_cerimonia: 1999 }
+{ filmes: [ 'The French Connection' ], diretores: [ "Philip D'Antoni, Producer" ], ano_cerimonia: 1972 }
+{ filmes: [ 'Rocky' ], diretores: [ 'Irwin Winkler and Robert Chartoff, Producers' ], ano_cerimonia: 1977 }
+{ filmes: [ 'The Departed' ], diretores: [ 'Graham King, Producer' ], ano_cerimonia: 2007 }
+{ filmes: [ 'West Side Story' ], diretores: [ 'Robert Wise, Producer' ], ano_cerimonia: 1962 }
+{ filmes: [ 'Annie Hall' ], diretores: [ 'Charles H. Joffe, Producer' ], ano_cerimonia: 1978 }
+{ filmes: [ 'Driving Miss Daisy' ], diretores: [ 'Richard D. Zanuck and Lili Fini Zanuck, Producers' ], ano_cerimonia: 1990 }
+{ filmes: [ 'Gladiator' ], diretores: [ 'Douglas Wick, David Franzoni and Branko Lustig, Producers' ], ano_cerimonia: 2001 }
+{ filmes: [ 'Birdman or (The Unexpected Virtue of Ignorance)' ], diretores: [ 'Alejandro G. Iñárritu, John Lesher and James W. Skotchdopole, Producers' ], ano_cerimonia: 2015 }
+{ filmes: [ 'Parasite' ], diretores: [ 'Kwak Sin Ae and Bong Joon Ho, Producers' ], ano_cerimonia: 2020 }
+{ filmes: [ 'Terms of Endearment' ], diretores: [ 'James L. Brooks, Producer' ], ano_cerimonia: 1984 }
+{ filmes: [ 'Nomadland' ], diretores: [ 'Frances McDormand, Peter Spears, Mollye Asher, Dan Janvey and Chloé Zhao, Producers' ], ano_cerimonia: 2021 }
+{ filmes: [ 'Going My Way' ], diretores: [ 'Paramount' ], ano_cerimonia: 1945 }
+{ filmes: [ 'The Sting' ], diretores: [ 'Tony Bill, Michael Phillips and Julia Phillips, Producers' ], ano_cerimonia: 1974 }
+{ filmes: [ 'Moonlight' ], diretores: [ 'Adele Romanski, Dede Gardner and Jeremy Kleiner, Producers' ], ano_cerimonia: 2017 }
+{ filmes: [ 'Platoon' ], diretores: [ 'Arnold Kopelson, Producer' ], ano_cerimonia: 1987 }
+{ filmes: [ "Gentleman's Agreement" ], diretores: [ '20th Century-Fox' ], ano_cerimonia: 1948 }
+{ filmes: [ 'The Greatest Show on Earth' ], diretores: [ 'Cecil B. DeMille, Producer' ], ano_cerimonia: 1953 }
+{ filmes: [ 'Amadeus' ], diretores: [ 'Saul Zaentz, Producer' ], ano_cerimonia: 1985 }
+{ filmes: [ 'A Beautiful Mind' ], diretores: [ 'Brian Grazer and Ron Howard, Producers' ], ano_cerimonia: 2002 }
+{ filmes: [ 'The Lord of the Rings: The Return of the King' ], diretores: [ 'Barrie M. Osborne, Peter Jackson and Fran Walsh, Producers' ], ano_cerimonia: 2004 }
+{ filmes: [ 'Gigi' ], diretores: [ 'Arthur Freed, Producer' ], ano_cerimonia: 1959 }
+{ filmes: [ 'Ben-Hur' ], diretores: [ 'Sam Zimbalist, Producer' ], ano_cerimonia: 1960 }
+{ filmes: [ 'All about Eve' ], diretores: [ '20th Century-Fox' ], ano_cerimonia: 1951 }
+{ filmes: [ 'Tom Jones' ], diretores: [ 'Tony Richardson, Producer' ], ano_cerimonia: 1964 }
+{ filmes: [ 'Unforgiven' ], diretores: [ 'Clint Eastwood, Producer' ], ano_cerimonia: 1993 }
+{ filmes: [ 'Chicago' ], diretores: [ 'Martin Richards, Producer' ], ano_cerimonia: 2003 }
+{ filmes: [ 'The Broadway Melody' ], diretores: [ 'Metro-Goldwyn-Mayer' ], ano_cerimonia: 1929 }
+{ filmes: [ 'The Silence of the Lambs' ], diretores: [ 'Edward Saxon, Kenneth Utt and Ron Bozman, Producers' ], ano_cerimonia: 1992 }
+{ filmes: [ 'Spotlight' ], diretores: [ 'Michael Sugar, Steve Golin, Nicole Rocklin and Blye Pagon Faust, Producers' ], ano_cerimonia: 2016 }
+{ filmes: [ 'The Lost Weekend' ], diretores: [ 'Paramount' ], ano_cerimonia: 1946 }
+{ filmes: [ 'Braveheart' ], diretores: [ 'Mel Gibson, Alan Ladd, Jr. and Bruce Davey, Producers' ], ano_cerimonia: 1996 }
+{ filmes: [ 'Oppenheimer' ], diretores: [ 'Emma Thomas, Charles Roven and Christopher Nolan, Producers' ], ano_cerimonia: 2024 }
+{ filmes: [ 'The Sound of Music' ], diretores: [ 'Robert Wise, Producer' ], ano_cerimonia: 1966 }
+{ filmes: [ 'The Apartment' ], diretores: [ 'Billy Wilder, Producer' ], ano_cerimonia: 1961 }
+{ filmes: [ 'The English Patient' ], diretores: [ 'Saul Zaentz, Producer' ], ano_cerimonia: 1997 }
+{ filmes: [ 'The Hurt Locker' ], diretores: [ 'Kathryn Bigelow, Mark Boal, Nicolas Chartier and Greg Shapiro, Producers' ], ano_cerimonia: 2010 }
+{ filmes: [ "The King's Speech" ], diretores: [ 'Iain Canning, Emile Sherman and Gareth Unwin, Producers' ], ano_cerimonia: 2011 }
+{ filmes: [ 'A Man for All Seasons' ], diretores: [ 'Fred Zinnemann, Producer' ], ano_cerimonia: 1967 }
+{ filmes: [ 'On the Waterfront' ], diretores: [ 'Sam Spiegel, Producer' ], ano_cerimonia: 1955 }
+{ filmes: [ 'The Godfather' ], diretores: [ 'Albert S. Ruddy, Producer' ], ano_cerimonia: 1973 }
+{ filmes: [ 'Gandhi' ], diretores: [ 'Richard Attenborough, Producer' ], ano_cerimonia: 1983 }
+{ filmes: [ 'Patton' ], diretores: [ 'Frank McCarthy, Producer' ], ano_cerimonia: 1971 }
+{ filmes: [ 'Oliver!' ], diretores: [ 'John Woolf, Producer' ], ano_cerimonia: 1969 }
+{ filmes: [ 'Lawrence of Arabia' ], diretores: [ 'Sam Spiegel, Producer' ], ano_cerimonia: 1963 }
+{ filmes: [ 'Out of Africa' ], diretores: [ 'Sydney Pollack, Producer' ], ano_cerimonia: 1986 }
+{ filmes: [ 'Slumdog Millionaire' ], diretores: [ 'Christian Colson, Producer' ], ano_cerimonia: 2009 }
+{ filmes: [ '12 Years a Slave' ], diretores: [ 'Brad Pitt, Dede Gardner, Jeremy Kleiner, Steve McQueen and Anthony Katagas, Producers' ], ano_cerimonia: 2014 }
+{ filmes: [ 'My Fair Lady' ], diretores: [ 'Jack L. Warner, Producer' ], ano_cerimonia: 1965 }
+{ filmes: [ 'Wings' ], diretores: [ 'Paramount Famous Lasky' ], ano_cerimonia: 1928 }
+{ filmes: [ 'Around the World in 80 Days' ], diretores: [ 'Michael Todd, Producer' ], ano_cerimonia: 1957 }
+{ filmes: [ 'Crash' ], diretores: [ 'Paul Haggis and Cathy Schulman, Producers' ], ano_cerimonia: 2006 }
+{ filmes: [ 'Midnight Cowboy' ], diretores: [ 'Jerome Hellman, Producer' ], ano_cerimonia: 1970 }
+{ filmes: [ 'Kramer vs. Kramer' ], diretores: [ 'Stanley R. Jaffe, Producer' ], ano_cerimonia: 1980 }
+{ filmes: [ "All the King's Men" ], diretores: [ 'Robert Rossen Productions' ], ano_cerimonia: 1950 }
+{ filmes: [ 'Rain Man' ], diretores: [ 'Mark Johnson, Producer' ], ano_cerimonia: 1989 }
+{ filmes: [ "Schindler's List" ], diretores: [ 'Steven Spielberg, Gerald R. Molen and Branko Lustig, Producers' ], ano_cerimonia: 1994 }
+{ filmes: [ 'Million Dollar Baby' ], diretores: [ 'Clint Eastwood, Albert S. Ruddy and Tom Rosenberg, Producers' ], ano_cerimonia: 2005 }
+{ filmes: [ 'American Beauty' ], diretores: [ 'Bruce Cohen and Dan Jinks, Producers' ], ano_cerimonia: 2000 }
+```
+</details>
 
-Q:
-
+Q: 
+```
+db.registros.aggregate([
+  {
+    $match: {
+      categoria: {
+        $in: ["BEST PICTURE", "BEST MOTION PICTURE", "OUTSTANDING PICTURE", "BEST PRODUCTION",
+              "BEST DIRECTOR", "OUTSTANDING DIRECTOR"]
+      },
+        vencedor: 1
+    }
+  },
+  {
+    $group: {
+      _id: "$ano_cerimonia",
+      categorias: { $addToSet: "$categoria" },
+      filmes: { $addToSet: "$nome_do_filme" },
+      diretores: { $addToSet: "$nome_do_indicado" }
+    }
+  },
+  {
+    $project: {
+      ano_cerimonia: "$_id",
+      filmes: 1,
+      diretores: 1,
+      _id: 0
+    }
+  }
+]);
+```
 ------
 
 20. Denzel Washington e Jamie Foxx já concorreram ao Oscar no mesmo ano?
