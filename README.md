@@ -598,12 +598,14 @@ R:<details> <summary>Veja a resposata completa expandindo aqui.</summary>
 ```
 </details>
 
-Q: ``` db.registros.aggregate([
+Q: ```
+db.registros.aggregate([
   { $match: { categoria: { $in: ["ACTOR", "ACTRESS", "Best Actress", "Best Actor","ACTRESS IN A SUPPORTING ROLE","ACTOR IN A SUPPORTING ROLE"] } } },
   { $group: { _id: "$nome_do_indicado", indicacoes: { $sum: 1 } } },
   { $match: { indicacoes: { $gt: 1 } } }
-]); ]
+]); 
 ```
+
 ------
 
 9. A série de filmes Toy Story ganhou Oscars em quais anos?
