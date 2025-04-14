@@ -24,15 +24,14 @@ Q:
 
 2. Qual o número de indicações por categoria agrupadas por categoria?
 
-R: ``` {_id: 'DIRECTING', total_indicacoes: 469}
+R: <details> <summary>Veja a resposata completa expandindo aqui.</summary>
+```
+{_id: 'DIRECTING', total_indicacoes: 469}
 {_id: 'FILM EDITING', total_indicacoes: 450}
 {_id: 'ACTRESS IN A SUPPORTING ROLE', total_indicacoes: 440}
 {_id: 'ACTOR IN A SUPPORTING ROLE', total_indicacoes: 440}
 {_id: 'DOCUMENTARY (Short Subject)', total_indicacoes: 378}
-{_id: 'BEST PICTURE', total_indicacoes: 371} ```
-
-<details> <summary>Veja a resposata completa expandindo aqui.</summary>
-```
+{_id: 'BEST PICTURE', total_indicacoes: 371}
 {_id: 'DOCUMENTARY (Feature)', total_indicacoes: 345}
 {_id: 'CINEMATOGRAPHY', total_indicacoes: 338}
 {_id: 'FOREIGN LANGUAGE FILM', total indicações: 315}
@@ -228,13 +227,380 @@ Q: ``` db.indicados.count({ nome_do_indicado: "Amy Adams", vencedor: true }) ```
 
 8. Quais os atores/atrizes que foram indicados mais de uma vez?
 
-R:``` db.registros.aggregate([
+R:<details> <summary>Veja a resposta completa expandindo aqui</summary>
+{ _id: 'Sally Field', indicacoes: 3 }
+{ _id: 'Christoph Waltz', indicacoes: 2 }
+{ _id: 'Daniel Day-Lewis', indicacoes: 5 }
+{ _id: 'Melinda Dillon', indicacoes: 2 }
+{ _id: 'Jack Lemmon', indicacoes: 8 }
+{ _id: 'Sal Mineo', indicacoes: 2 }
+{ _id: 'Michael Shannon', indicacoes: 2 }
+{ _id: 'Goldie Hawn', indicacoes: 2 }
+{ _id: 'Al Pacino', indicacoes: 9 }
+{ _id: 'Tom Wilkinson', indicacoes: 2 }
+{ _id: 'Jon Voight', indicacoes: 4 }
+{ _id: 'Agnes Moorehead', indicacoes: 4 }
+{ _id: 'Richard Farnsworth', indicacoes: 2 }
+{ _id: 'Wallace Beery', indicacoes: 2 }
+{ _id: 'Joan Cusack', indicacoes: 2 }
+{ _id: 'Dustin Hoffman', indicacoes: 7 }
+{ _id: 'Thelma Ritter', indicacoes: 6 }
+{ _id: 'George C. Scott', indicacoes: 4 }
+{ _id: 'Eddie Redmayne', indicacoes: 2 }
+{ _id: 'Cher', indicacoes: 2 }
+{ _id: 'Paul Muni', indicacoes: 6 }
+{ _id: 'Leonardo DiCaprio', indicacoes: 6 }
+{ _id: 'Renée Zellweger', indicacoes: 4 }
+{ _id: 'Hilary Swank', indicacoes: 2 }
+{ _id: 'Joan Allen', indicacoes: 3 }
+{ _id: 'Norma Shearer', indicacoes: 6 }
+{ _id: 'Claire Trevor', indicacoes: 3 }
+{ _id: 'Angela Bassett', indicacoes: 2 }
+{ _id: 'Gary Cooper', indicacoes: 5 }
+{ _id: 'Michael Fassbender', indicacoes: 2 }
+{ _id: 'Gloria Grahame', indicacoes: 2 }
+{ _id: 'Fredric March', indicacoes: 5 }
+{ _id: 'Luise Rainer', indicacoes: 2 }
+{ _id: 'Juliette Binoche', indicacoes: 2 }
+{ _id: 'Julie Walters', indicacoes: 2 }
+{ _id: 'John Garfield', indicacoes: 2 }
+{ _id: 'Alan Arkin', indicacoes: 4 }
+{ _id: 'Burt Lancaster', indicacoes: 4 }
+{ _id: 'Richard Dreyfuss', indicacoes: 2 }
+{ _id: 'Jonah Hill', indicacoes: 2 }
+{ _id: 'Jude Law', indicacoes: 2 }
+{ _id: 'Marcello Mastroianni', indicacoes: 3 }
+{ _id: 'Clifton Webb', indicacoes: 3 }
+{ _id: "Peter O'Toole", indicacoes: 8 }
+{ _id: 'Rosalind Russell', indicacoes: 4 }
+{ _id: 'Amy Adams', indicacoes: 6 }
+{ _id: 'Claudette Colbert', indicacoes: 3 }
+{ _id: 'Gena Rowlands', indicacoes: 2 }
+{ _id: 'Burgess Meredith', indicacoes: 2 }
+{ _id: 'Walter Huston', indicacoes: 4 }
+{ _id: 'Irene Dunne', indicacoes: 5 }
+{ _id: 'Ben Kingsley', indicacoes: 4 }
+{ _id: 'Rooney Mara', indicacoes: 2 }
+{ _id: 'Timothée Chalamet', indicacoes: 2 }
+{ _id: 'Frank Sinatra', indicacoes: 2 }
+{ _id: 'Bette Midler', indicacoes: 2 }
+{ _id: 'Nicolas Cage', indicacoes: 2 }
+{ _id: 'Gary Oldman', indicacoes: 3 }
+{ _id: 'Cynthia Erivo', indicacoes: 2 }
+{ _id: 'Jennifer Jones', indicacoes: 5 }
+{ _id: 'Johnny Depp', indicacoes: 3 }
+{ _id: 'Penélope Cruz', indicacoes: 4 }
+{ _id: 'Anne Baxter', indicacoes: 2 }
+{ _id: 'Marie Dressler', indicacoes: 2 }
+{ _id: 'Fay Bainter', indicacoes: 3 }
+{ _id: 'Elsa Lanchester', indicacoes: 2 }
+{ _id: 'Peter Finch', indicacoes: 2 }
+{ _id: 'Natalie Wood', indicacoes: 3 }
+{ _id: 'Monty Woolley', indicacoes: 2 }
+{ _id: 'Marisa Tomei', indicacoes: 3 }
+{ _id: 'Paul Scofield', indicacoes: 2 }
+{ _id: 'Michelle Pfeiffer', indicacoes: 3 }
+{ _id: 'James Cagney', indicacoes: 3 }
+{ _id: 'Olivia de Havilland', indicacoes: 5 }
+{ _id: 'Walter Matthau', indicacoes: 3 }
+{ _id: 'Madeline Kahn', indicacoes: 2 }
+{ _id: 'Mary McDonnell', indicacoes: 2 }
+{ _id: 'Charles Bickford', indicacoes: 3 }
+{ _id: 'Ellen Burstyn', indicacoes: 6 }
+{ _id: 'Holly Hunter', indicacoes: 4 }
+{ _id: 'Octavia Spencer', indicacoes: 3 }
+{ _id: 'Jeremy Renner', indicacoes: 2 }
+{ _id: 'Winona Ryder', indicacoes: 2 }
+{ _id: 'Mercedes McCambridge', indicacoes: 2 }
+{ _id: 'Karl Malden', indicacoes: 2 }
+{ _id: 'Heath Ledger', indicacoes: 2 }
+{ _id: 'Janet Gaynor', indicacoes: 2 }
+{ _id: 'Colman Domingo', indicacoes: 2 }
+{ _id: 'Edmund Gwenn', indicacoes: 2 }
+{ _id: 'Bing Crosby', indicacoes: 3 }
+{ _id: 'Alec Guinness', indicacoes: 4 }
+{ _id: 'Alice Brady', indicacoes: 2 }
+{ _id: 'Joaquin Phoenix', indicacoes: 4 }
+{ _id: 'Gloria Swanson', indicacoes: 3 }
+{ _id: 'Mickey Rooney', indicacoes: 4 }
+{ _id: 'Clint Eastwood', indicacoes: 2 }
+{ _id: 'Ryan Gosling', indicacoes: 3 }
+{ _id: 'Marcia Gay Harden', indicacoes: 2 }
+{ _id: 'Shelley Winters', indicacoes: 4 }
+{ _id: 'Audrey Hepburn', indicacoes: 5 }
+{ _id: 'Charlize Theron', indicacoes: 3 }
+{ _id: 'Maximilian Schell', indicacoes: 3 }
+{ _id: 'Henry Fonda', indicacoes: 2 }
+{ _id: 'Maggie Smith', indicacoes: 6 }
+{ _id: 'Ed Harris', indicacoes: 4 }
+{ _id: 'Angelina Jolie', indicacoes: 2 }
+{ _id: 'Samantha Morton', indicacoes: 2 }
+{ _id: 'Anne Bancroft', indicacoes: 5 }
+{ _id: 'Jessica Lange', indicacoes: 6 }
+{ _id: 'Kathy Bates', indicacoes: 4 }
+{ _id: 'Jane Fonda', indicacoes: 7 }
+{ _id: 'Javier Bardem', indicacoes: 4 }
+{ _id: 'Paul Newman', indicacoes: 9 }
+{ _id: 'Roy Scheider', indicacoes: 2 }
+{ _id: 'Jeff Bridges', indicacoes: 7 }
+{ _id: 'Marsha Mason', indicacoes: 4 }
+{ _id: 'Adrien Brody', indicacoes: 2 }
+{ _id: 'Max von Sydow', indicacoes: 2 }
+{ _id: 'Kenneth Branagh', indicacoes: 2 }
+{ _id: 'James Dean', indicacoes: 2 }
+{ _id: 'Bette Davis', indicacoes: 11 }
+{ _id: 'Sissy Spacek', indicacoes: 6 }
+{ _id: 'Peter Sellers', indicacoes: 2 }
+{ _id: 'Shirley MacLaine', indicacoes: 5 }
+{ _id: 'Vincent Gardenia', indicacoes: 2 }
+{ _id: 'Maureen Stapleton', indicacoes: 4 }
+{ _id: 'Tom Hanks', indicacoes: 6 }
+{ _id: 'Dianne Wiest', indicacoes: 3 }
+{ _id: 'Ruth Chatterton', indicacoes: 2 }
+{ _id: 'Charles Laughton', indicacoes: 3 }
+{ _id: 'Jamie Foxx', indicacoes: 2 }
+{ _id: 'Emma Stone', indicacoes: 4 }
+{ _id: 'Richard Burton', indicacoes: 7 }
+{ _id: 'Joyce Redman', indicacoes: 2 }
+{ _id: 'Akim Tamiroff', indicacoes: 2 }
+{ _id: 'Bradley Cooper', indicacoes: 5 }
+{ _id: 'Ian McKellen', indicacoes: 2 }
+{ _id: 'Debra Winger', indicacoes: 3 }
+{ _id: 'Ethel Barrymore', indicacoes: 4 }
+{ _id: 'Robert Duvall', indicacoes: 7 }
+{ _id: 'Benicio Del Toro', indicacoes: 2 }
+{ _id: 'John Lithgow', indicacoes: 2 }
+{ _id: 'Meryl Streep', indicacoes: 21 }
+{ _id: 'Gale Sondergaard', indicacoes: 2 }
+{ _id: 'Sidney Poitier', indicacoes: 2 }
+{ _id: 'Bruce Dern', indicacoes: 2 }
+{ _id: 'Frank Morgan', indicacoes: 2 }
+{ _id: 'Dame May Whitty', indicacoes: 2 }
+{ _id: 'Jill Clayburgh', indicacoes: 2 }
+{ _id: 'Jack Palance', indicacoes: 3 }
+{ _id: 'Laura Linney', indicacoes: 3 }
+{ _id: 'Wendy Hiller', indicacoes: 3 }
+{ _id: 'J. Carrol Naish', indicacoes: 2 }
+{ _id: 'Judy Garland', indicacoes: 2 }
+{ _id: 'Glenda Jackson', indicacoes: 4 }
+{ _id: 'Helen Hayes', indicacoes: 2 }
+{ _id: 'Matt Damon', indicacoes: 3 }
+{ _id: 'Joan Fontaine', indicacoes: 3 }
+{ _id: 'Anna Magnani', indicacoes: 2 }
+{ _id: 'Albert Finney', indicacoes: 5 }
+{ _id: 'Victor McLaglen', indicacoes: 2 }
+{ _id: 'Jane Alexander', indicacoes: 4 }
+{ _id: 'Will Smith', indicacoes: 3 }
+{ _id: 'Catherine Keener', indicacoes: 2 }
+{ _id: 'Thomas Mitchell', indicacoes: 2 }
+{ _id: 'Sandra Bullock', indicacoes: 2 }
+{ _id: 'Brenda Blethyn', indicacoes: 2 }
+{ _id: 'Olivia Colman', indicacoes: 3 }
+{ _id: 'Kirk Douglas', indicacoes: 3 }
+{ _id: "Arthur O'Connell", indicacoes: 2 }
+{ _id: 'Viggo Mortensen', indicacoes: 3 }
+{ _id: 'Anne Hathaway', indicacoes: 2 }
+{ _id: 'Jack Warden', indicacoes: 2 }
+{ _id: 'Simone Signoret', indicacoes: 2 }
+{ _id: 'Robin Williams', indicacoes: 4 }
+{ _id: 'Whoopi Goldberg', indicacoes: 2 }
+{ _id: 'Ann-Margret', indicacoes: 2 }
+{ _id: 'Angela Lansbury', indicacoes: 3 }
+{ _id: 'Richard Jenkins', indicacoes: 2 }
+{ _id: 'Peter Ustinov', indicacoes: 3 }
+{ _id: 'Diane Ladd', indicacoes: 3 }
+{ _id: 'Geoffrey Rush', indicacoes: 4 }
+{ _id: 'Nick Nolte', indicacoes: 3 }
+{ _id: 'Maria Ouspenskaya', indicacoes: 2 }
+{ _id: 'Faye Dunaway', indicacoes: 3 }
+{ _id: 'Barbra Streisand', indicacoes: 2 }
+{ _id: 'Clark Gable', indicacoes: 3 }
+{ _id: 'Casey Affleck', indicacoes: 2 }
+{ _id: 'Loretta Young', indicacoes: 2 }
+{ _id: 'Geena Davis', indicacoes: 2 }
+{ _id: 'Julianne Moore', indicacoes: 5 }
+{ _id: 'Geraldine Page', indicacoes: 8 }
+{ _id: 'Eleanor Parker', indicacoes: 3 }
+{ _id: 'Helen Mirren', indicacoes: 4 }
+{ _id: 'Russell Crowe', indicacoes: 3 }
+{ _id: 'William Powell', indicacoes: 3 }
+{ _id: 'Deborah Kerr', indicacoes: 6 }
+{ _id: 'Nicole Kidman', indicacoes: 5 }
+{ _id: 'Susan Sarandon', indicacoes: 5 }
+{ _id: 'Adam Driver', indicacoes: 2 }
+{ _id: 'Martin Landau', indicacoes: 3 }
+{ _id: 'Tom Cruise', indicacoes: 3 }
+{ _id: 'Paul Giamatti', indicacoes: 2 }
+{ _id: 'Anthony Quinn', indicacoes: 4 }
+{ _id: 'Anjelica Huston', indicacoes: 3 }
+{ _id: 'Christian Bale', indicacoes: 4 }
+{ _id: 'Celeste Holm', indicacoes: 3 }
+{ _id: 'Melvyn Douglas', indicacoes: 3 }
+{ _id: 'Gene Hackman', indicacoes: 5 }
+{ _id: 'Naomi Watts', indicacoes: 2 }
+{ _id: 'Beulah Bondi', indicacoes: 2 }
+{ _id: 'John Travolta', indicacoes: 2 }
+{ _id: 'John Hurt', indicacoes: 2 }
+{ _id: 'Teresa Wright', indicacoes: 3 }
+{ _id: 'Ethan Hawke', indicacoes: 2 }
+{ _id: 'Marjorie Rambeau', indicacoes: 2 }
+{ _id: 'Walter Pidgeon', indicacoes: 2 }
+{ _id: 'Melissa McCarthy', indicacoes: 2 }
+{ _id: 'José Ferrer', indicacoes: 3 }
+{ _id: 'James Stewart', indicacoes: 5 }
+{ _id: 'Lee Grant', indicacoes: 4 }
+{ _id: 'Benedict Cumberbatch', indicacoes: 2 }
+{ _id: 'Piper Laurie', indicacoes: 3 }
+{ _id: 'Viola Davis', indicacoes: 4 }
+{ _id: 'Reese Witherspoon', indicacoes: 2 }
+{ _id: 'Warren Beatty', indicacoes: 4 }
+{ _id: 'Keira Knightley', indicacoes: 2 }
+{ _id: 'Basil Rathbone', indicacoes: 2 }
+{ _id: 'Greer Garson', indicacoes: 7 }
+{ _id: 'Humphrey Bogart', indicacoes: 3 }
+{ _id: 'Robert De Niro', indicacoes: 8 }
+{ _id: 'Arthur Kennedy', indicacoes: 5 }
+{ _id: 'Ralph Fiennes', indicacoes: 3 }
+{ _id: 'John Wayne', indicacoes: 2 }
+{ _id: 'Diane Keaton', indicacoes: 4 }
+{ _id: 'Edward Norton', indicacoes: 3 }
+{ _id: 'Ingrid Bergman', indicacoes: 7 }
+{ _id: 'William Hurt', indicacoes: 4 }
+{ _id: 'Cecil Kellaway', indicacoes: 2 }
+{ _id: 'Annette Bening', indicacoes: 5 }
+{ _id: 'Claude Rains', indicacoes: 4 }
+{ _id: 'Sophia Loren', indicacoes: 2 }
+{ _id: 'Ralph Richardson', indicacoes: 2 }
+{ _id: 'Walter Brennan', indicacoes: 4 }
+{ _id: 'Robert Montgomery', indicacoes: 2 }
+{ _id: 'Elizabeth Taylor', indicacoes: 5 }
+{ _id: 'Ruth Gordon', indicacoes: 2 }
+{ _id: 'Hugh Griffith', indicacoes: 2 }
+{ _id: 'Laurence Olivier', indicacoes: 9 }
+{ _id: 'Susan Hayward', indicacoes: 5 }
+{ _id: 'Sigourney Weaver', indicacoes: 3 }
+{ _id: 'Michelle Williams', indicacoes: 5 }
+{ _id: 'Helen Hunt', indicacoes: 2 }
+{ _id: 'Shirley Knight', indicacoes: 2 }
+{ _id: 'Glenn Close', indicacoes: 8 }
+{ _id: 'Djimon Hounsou', indicacoes: 2 }
+{ _id: 'Mark Ruffalo', indicacoes: 4 }
+{ _id: 'Morgan Freeman', indicacoes: 5 }
+{ _id: 'Estelle Parsons', indicacoes: 2 }
+{ _id: "Edmond O'Brien", indicacoes: 2 }
+{ _id: 'Willem Dafoe', indicacoes: 4 }
+{ _id: 'Billy Bob Thornton', indicacoes: 2 }
+{ _id: 'Michael Caine', indicacoes: 6 }
+{ _id: 'Miranda Richardson', indicacoes: 2 }
+{ _id: 'Eileen Heckart', indicacoes: 2 }
+{ _id: 'Woody Harrelson', indicacoes: 3 }
+{ _id: 'Richard Harris', indicacoes: 2 }
+{ _id: 'Emma Thompson', indicacoes: 4 }
+{ _id: 'Julia Roberts', indicacoes: 4 }
+{ _id: 'Anne Revere', indicacoes: 3 }
+{ _id: 'James Whitmore', indicacoes: 2 }
+{ _id: 'Jodie Foster', indicacoes: 5 }
+{ _id: 'Janet McTeer', indicacoes: 2 }
+{ _id: 'Jessica Chastain', indicacoes: 3 }
+{ _id: 'Talia Shire', indicacoes: 2 }
+{ _id: 'Gladys Cooper', indicacoes: 3 }
+{ _id: 'Margot Robbie', indicacoes: 2 }
+{ _id: 'Sally Hawkins', indicacoes: 2 }
+{ _id: 'Jean Simmons', indicacoes: 2 }
+{ _id: 'Mildred Dunnock', indicacoes: 2 }
+{ _id: 'Laura Dern', indicacoes: 3 }
+{ _id: 'Cate Blanchett', indicacoes: 8 }
+{ _id: 'Judy Davis', indicacoes: 2 }
+{ _id: 'Charles Durning', indicacoes: 2 }
+{ _id: 'Sylvia Miles', indicacoes: 2 }
+{ _id: 'Joe Pesci', indicacoes: 3 }
+{ _id: 'Julie Christie', indicacoes: 4 }
+{ _id: 'Brad Pitt', indicacoes: 4 }
+{ _id: 'Eddie Albert', indicacoes: 2 }
+{ _id: 'Charles Coburn', indicacoes: 3 }
+{ _id: 'Ronald Colman', indicacoes: 3 }
+{ _id: 'Jason Robards', indicacoes: 3 }
+{ _id: 'Rex Harrison', indicacoes: 2 }
+{ _id: 'Gig Young', indicacoes: 3 }
+{ _id: 'Scarlett Johansson', indicacoes: 2 }
+{ _id: 'Judi Dench', indicacoes: 8 }
+{ _id: 'Colin Firth', indicacoes: 2 }
+{ _id: 'Leslie Howard', indicacoes: 2 }
+{ _id: 'James Woods', indicacoes: 2 }
+{ _id: 'Jacki Weaver', indicacoes: 2 }
+{ _id: 'Charles Boyer', indicacoes: 4 }
+{ _id: 'Dame Edith Evans', indicacoes: 3 }
+{ _id: 'Liza Minnelli', indicacoes: 2 }
+{ _id: 'Jennifer Lawrence', indicacoes: 4 }
+{ _id: 'Judd Hirsch', indicacoes: 2 }
+{ _id: 'Kim Stanley', indicacoes: 2 }
+{ _id: 'Saoirse Ronan', indicacoes: 4 }
+{ _id: 'Christopher Walken', indicacoes: 2 }
+{ _id: 'Jessica Tandy', indicacoes: 2 }
+{ _id: 'Kevin Spacey', indicacoes: 2 }
+{ _id: 'Spencer Tracy', indicacoes: 9 }
+{ _id: 'Cary Grant', indicacoes: 2 }
+{ _id: 'Dyan Cannon', indicacoes: 2 }
+{ _id: 'George Arliss', indicacoes: 2 }
+{ _id: 'Isabelle Adjani', indicacoes: 2 }
+{ _id: 'Joanne Woodward', indicacoes: 4 }
+{ _id: 'Mahershala Ali', indicacoes: 2 }
+{ _id: 'Barbara Stanwyck', indicacoes: 4 }
+{ _id: 'Joan Crawford', indicacoes: 3 }
+{ _id: 'Peter Falk', indicacoes: 2 }
+{ _id: 'Patricia Neal', indicacoes: 2 }
+{ _id: 'Sean Penn', indicacoes: 5 }
+{ _id: 'Marlon Brando', indicacoes: 8 }
+{ _id: 'Rod Steiger', indicacoes: 3 }
+{ _id: 'Jack Nicholson', indicacoes: 12 }
+{ _id: 'Melissa Leo', indicacoes: 2 }
+{ _id: 'Tom Courtenay', indicacoes: 2 }
+{ _id: 'Frances McDormand', indicacoes: 6 }
+{ _id: 'Gregory Peck', indicacoes: 5 }
+{ _id: 'Greta Garbo', indicacoes: 3 }
+{ _id: 'Montgomery Clift', indicacoes: 4 }
+{ _id: 'Andrew Garfield', indicacoes: 2 }
+{ _id: 'John Gielgud', indicacoes: 2 }
+{ _id: 'Daniel Kaluuya', indicacoes: 2 }
+{ _id: 'Tommy Lee Jones', indicacoes: 4 }
+{ _id: 'John Malkovich', indicacoes: 2 }
+{ _id: 'Vivien Leigh', indicacoes: 2 }
+{ _id: 'George Clooney', indicacoes: 4 }
+{ _id: 'Natalie Portman', indicacoes: 3 }
+{ _id: 'Vanessa Redgrave', indicacoes: 6 }
+{ _id: 'Sam Rockwell', indicacoes: 2 }
+{ _id: 'Lee J. Cobb', indicacoes: 2 }
+{ _id: 'Jane Wyman', indicacoes: 4 }
+{ _id: 'Katharine Hepburn', indicacoes: 12 }
+{ _id: 'Liv Ullmann', indicacoes: 2 }
+{ _id: 'Marion Cotillard', indicacoes: 2 }
+{ _id: 'Robert Downey Jr.', indicacoes: 3 }
+{ _id: 'Julie Andrews', indicacoes: 3 }
+{ _id: 'Helena Bonham Carter', indicacoes: 2 }
+{ _id: 'Denzel Washington', indicacoes: 9 }
+{ _id: 'Sylvester Stallone', indicacoes: 2 }
+{ _id: 'James Mason', indicacoes: 3 }
+{ _id: 'Philip Seymour Hoffman', indicacoes: 4 }
+{ _id: 'Grace Kelly', indicacoes: 2 }
+{ _id: 'Lynn Redgrave', indicacoes: 2 }
+{ _id: 'Robert Donat', indicacoes: 2 }
+{ _id: 'Emily Watson', indicacoes: 2 }
+{ _id: 'Barry Fitzgerald', indicacoes: 2 }
+{ _id: 'Christopher Plummer', indicacoes: 3 }
+{ _id: 'Kate Winslet', indicacoes: 7 }
+{ _id: 'J.K. Simmons', indicacoes: 2 }
+{ _id: 'Leslie Caron', indicacoes: 2 }
+{ _id: 'Carey Mulligan', indicacoes: 3 }
+{ _id: 'Anthony Hopkins', indicacoes: 6 }
+{ _id: 'Rachel Weisz', indicacoes: 2 }
+{ _id: 'William Holden', indicacoes: 3 }
+</details>
+
+Q: ``` db.registros.aggregate([
   { $match: { categoria: { $in: ["ACTOR", "ACTRESS", "Best Actress", "Best Actor","ACTRESS IN A SUPPORTING ROLE","ACTOR IN A SUPPORTING ROLE"] } } },
   { $group: { _id: "$nome_do_indicado", indicacoes: { $sum: 1 } } },
   { $match: { indicacoes: { $gt: 1 } } }
 ]); ```
-
-Q:
 
 ------
 
