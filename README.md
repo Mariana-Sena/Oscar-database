@@ -227,7 +227,8 @@ Q: ``` db.indicados.count({ nome_do_indicado: "Amy Adams", vencedor: true }) ```
 
 8. Quais os atores/atrizes que foram indicados mais de uma vez?
 
-R:<details> <summary>Veja a resposta completa expandindo aqui</summary>
+R:<details> <summary>Veja a resposata completa expandindo aqui.</summary>
+```
 { _id: 'Sally Field', indicacoes: 3 }
 { _id: 'Christoph Waltz', indicacoes: 2 }
 { _id: 'Daniel Day-Lewis', indicacoes: 5 }
@@ -594,10 +595,10 @@ R:<details> <summary>Veja a resposta completa expandindo aqui</summary>
 { _id: 'Anthony Hopkins', indicacoes: 6 }
 { _id: 'Rachel Weisz', indicacoes: 2 }
 { _id: 'William Holden', indicacoes: 3 }
+```
 </details>
 
-Q: ``` 
-db.registros.aggregate([
+Q: ``` db.registros.aggregate([
   { $match: { categoria: { $in: ["ACTOR", "ACTRESS", "Best Actress", "Best Actor","ACTRESS IN A SUPPORTING ROLE","ACTOR IN A SUPPORTING ROLE"] } } },
   { $group: { _id: "$nome_do_indicado", indicacoes: { $sum: 1 } } },
   { $match: { indicacoes: { $gt: 1 } } }
@@ -610,6 +611,7 @@ db.registros.aggregate([
 R: 2011 e 2019
 
 Q:``` db.registros.find({ nome_do_filme: /Toy Story/, vencedor: "true" }, { ano_cerimonia: 1, _id: 0 }); ```
+
 ------
 
 10. A partir de que ano que a categoria "Actress" deixa de existir?
