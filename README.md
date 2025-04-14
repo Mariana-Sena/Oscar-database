@@ -834,6 +834,7 @@ db.registros.find(
   { nome_do_filme: 1, _id: 0 }
 );
 ```
+
 ------
 
 18. Sidney Poitier foi o primeiro ator negro a ser indicado ao Oscar. Em que ano ele foi indicado? Por qual filme?
