@@ -969,6 +969,33 @@ db.registros.aggregate([
 
 20. Denzel Washington e Jamie Foxx já concorreram ao Oscar no mesmo ano?
 
-R: 3 vezes
+R: Segundo o bdd, Denzel Washington e Jamie Foxx não concorreram ao Oscar no mesmo ano.
 
-Q:
+Q: 
+```
+db.registros.aggregate([
+  {
+    $match: {
+      nome_do_indicado: { $in: ["Denzel Washington", "Jamie Foxx"] }
+    }
+  },
+  {
+    $group: {
+      _id: "$ano_cerimonia",
+      indicados: { $addToSet: "$nome_do_indicado" }
+    }
+  },
+  {
+    $match: {
+      indicados: { $all: ["Denzel Washington", "Jamie Foxx"] }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      ano_cerimonia: "$_id",
+      indicados: 1
+    }
+  }
+]);
+```
