@@ -24,14 +24,15 @@ Q:
 
 2. Qual o número de indicações por categoria agrupadas por categoria?
 
-R: <details> <summary>Veja mais sobre o propósito do projeto</summary>
-```
-{_id: 'DIRECTING', total_indicacoes: 469}
+R: ``` {_id: 'DIRECTING', total_indicacoes: 469}
 {_id: 'FILM EDITING', total_indicacoes: 450}
 {_id: 'ACTRESS IN A SUPPORTING ROLE', total_indicacoes: 440}
 {_id: 'ACTOR IN A SUPPORTING ROLE', total_indicacoes: 440}
 {_id: 'DOCUMENTARY (Short Subject)', total_indicacoes: 378}
-{_id: 'BEST PICTURE', total_indicacoes: 371}
+{_id: 'BEST PICTURE', total_indicacoes: 371} ```
+
+<details> <summary>Veja a resposata completa expandindo aqui.</summary>
+```
 {_id: 'DOCUMENTARY (Feature)', total_indicacoes: 345}
 {_id: 'CINEMATOGRAPHY', total_indicacoes: 338}
 {_id: 'FOREIGN LANGUAGE FILM', total indicações: 315}
