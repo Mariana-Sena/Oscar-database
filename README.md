@@ -639,13 +639,15 @@ ou <br>
 12. Na campo "Vencedor", altere todos os valores com "true" para 1 e todos os valores "false" para 0.
 
 R: A alteração foi feita! O retorno efetuado pelo MongoDB shell foi:
-``` {
+```
+{
   acknowledged: true,
   insertedId: null,
   matchedCount: 8528,
   modifiedCount: 8528,
   upsertedCount: 0
-} ```
+}
+```
 
 Q: ```
 db.registros.updateMany({ vencedor: "true" }, { $set: { vencedor: 1 } });
