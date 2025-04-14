@@ -728,8 +728,9 @@ Q: ``` db.registros.countDocuments({ nome_do_indicado: "Denzel Washington", venc
 
 R: Considerando que hoje se chama "Best Picture" para a categoria de Melhor Filme, o filme premiado é Anora. Entretando, considerando que ao longo da história já houvream outros nomes para essa mesma categoria, os vencedores são:
 <details> <summary>Clique para ver os filmes</summary>
+  
 ```
-  { nome_do_filme: 'Wings' }
+{ nome_do_filme: 'Wings' }
 { nome_do_filme: 'The Broadway Melody' }
 { nome_do_filme: 'Going My Way' }
 { nome_do_filme: 'The Lost Weekend' }
