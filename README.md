@@ -659,7 +659,8 @@ db.registros.updateMany({ vencedor: "false" }, { $set: { vencedor: 0 } });
 
 R: na 78º edição
 
-Q: ``` db.registros.find({ nome_do_filme: "Crash" }, { cerimonia: 1}); ``` //retone a cerimônia = 1 = true
+Q: ``` db.registros.find({ nome_do_filme: "Crash" }, { cerimonia: 1}); ```
+//retone a cerimônia = 1 = true
 
 ------
 
@@ -667,9 +668,11 @@ Q: ``` db.registros.find({ nome_do_filme: "Crash" }, { cerimonia: 1}); ``` //ret
 
 R: Sim.
 
-Q: ``` db.registros.find({ nome_do_filme: "Central Station" }).count() > 0; ``` //operador de comparação, pois se for maior que zero a quantidade de vezes, significa que aparece, então retorna true, senão retornaria false.
-ou
-``` db.registros.find({ nome_do_filme: "Central Station" }).count(); ``` //retorna 2 (pois foi indicado ao oscar em duas categorias)
+Q: ``` db.registros.find({ nome_do_filme: "Central Station" }).count() > 0; ```
+//operador de comparação, pois se for maior que zero a quantidade de vezes, significa que aparece, então retorna true, senão retornaria false. <br>
+ou<br>
+``` db.registros.find({ nome_do_filme: "Central Station" }).count(); ```
+//retorna 2 (pois foi indicado ao oscar em duas categorias)
 
 ------
 
