@@ -24,7 +24,7 @@ Q:
 
 2. Qual o número de indicações por categoria agrupadas por categoria?
 
-R: 
+R: `<summary>`
 ```
 {_id: 'DIRECTING', total_indicacoes: 469}
 {_id: 'FILM EDITING', total_indicacoes: 450}
@@ -187,45 +187,50 @@ db.registros.aggregate([
 
 R: 3 vezes
 
-Q:  ``` db.registros.count({ nome_do_indicado: "Natalie Portman" }) ```
+Q:  ``` db.registros.countDocuments({ nome_do_indicado: "Natalie Portman" }) ```
 
 ------
 
 4. Quantos Oscars Natalie Portman ganhou?
 
-R: 3 vezes
+R: 1 vez
 
-Q:
+Q: ``` db.indicados.countDocuments({ nome_do_indicado: "Natalie Portman", vencedor: "true" }) ```
+
 
 ------
 
 5. Quantas vezes Viola Davis foi indicada ao Oscar?
 
-R: 3 vezes
+R: 4 vezes
 
-Q:
+Q:  ``` db.registros.countDocuments({ nome_do_indicado: "Viola Davis" }) ```
 
 ------
 
 6. Quantos Oscars Viola Davis ganhou?
 
-R: 3 vezes
+R: 1 vez
 
-Q:
+Q: ``` db.indicados.countDocuments({ nome_do_indicado: "Viola Davis", vencedor: "true" }) ```
 
 ------
 
 7. Amy Adams já ganhou algum Oscar?
 
-R: 3 vezes
+R: Amy Adams não ganhou nenhum Oscar
 
-Q:
+Q: ``` db.indicados.count({ nome_do_indicado: "Amy Adams", vencedor: true }) ```
 
 ------
 
 8. Quais os atores/atrizes que foram indicados mais de uma vez?
 
-R: 3 vezes
+R:``` db.registros.aggregate([
+  { $match: { categoria: { $in: ["ACTOR", "ACTRESS", "Best Actress", "Best Actor","ACTRESS IN A SUPPORTING ROLE","ACTOR IN A SUPPORTING ROLE"] } } },
+  { $group: { _id: "$nome_do_indicado", indicacoes: { $sum: 1 } } },
+  { $match: { indicacoes: { $gt: 1 } } }
+]); ```
 
 Q:
 
@@ -234,7 +239,7 @@ Q:
 9. A série de filmes Toy Story ganhou Oscars em quais anos?
 
 
-R: 3 vezes
+R: 
 
 Q:
 
@@ -242,7 +247,7 @@ Q:
 
 10. A partir de que ano que a categoria "Actress" deixa de existir?
 
-R: 3 vezes
+R: 
 
 Q:
 
