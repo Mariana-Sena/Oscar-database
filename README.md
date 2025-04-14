@@ -598,7 +598,8 @@ R:<details> <summary>Veja a resposata completa expandindo aqui.</summary>
 ```
 </details>
 
-Q: ```
+Q: 
+```
 db.registros.aggregate([
   { $match: { categoria: { $in: ["ACTOR", "ACTRESS", "Best Actress", "Best Actor","ACTRESS IN A SUPPORTING ROLE","ACTOR IN A SUPPORTING ROLE"] } } },
   { $group: { _id: "$nome_do_indicado", indicacoes: { $sum: 1 } } },
