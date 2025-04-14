@@ -596,60 +596,74 @@ R:<details> <summary>Veja a resposta completa expandindo aqui</summary>
 { _id: 'William Holden', indicacoes: 3 }
 </details>
 
-Q: ``` db.registros.aggregate([
+Q: ``` 
+db.registros.aggregate([
   { $match: { categoria: { $in: ["ACTOR", "ACTRESS", "Best Actress", "Best Actor","ACTRESS IN A SUPPORTING ROLE","ACTOR IN A SUPPORTING ROLE"] } } },
   { $group: { _id: "$nome_do_indicado", indicacoes: { $sum: 1 } } },
   { $match: { indicacoes: { $gt: 1 } } }
-]); ```
-
+]); ]
+```
 ------
 
 9. A série de filmes Toy Story ganhou Oscars em quais anos?
 
+R: 2011 e 2019
 
-R: 
-
-Q:
-
+Q:``` db.registros.find({ nome_do_filme: /Toy Story/, vencedor: "true" }, { ano_cerimonia: 1, _id: 0 }); ```
 ------
 
 10. A partir de que ano que a categoria "Actress" deixa de existir?
 
-R: 
+R: 1977, sendo 1976 o último ano com a categoria "Actress" presente.
 
-Q:
+Q:``` db.registros.find({ categoria: "ACTRESS" }).sort({ ano_cerimonia: -1 }).limit(1); ```
+
 
 ------
 
 11. Quem ganhou o primeiro Oscar para Melhor Atriz? Em que ano?
 
-R: 3 vezes
+R: Para a categoria Atriz, foi Janet Gaynor, em 1928. Por outro lado, para de fato a cateroria de Melhor Atriz, foi Mikey Madison, em 2025.
 
-Q:
-
+Q: ``` db.registros.find({ categoria: "ACTRESS", vencedor: "true" }).sort({ ano_cerimonia: 1 }).limit(1); ```
+ou
+ ``` db.registros.find({ categoria: "Best Actress", vencedor: "true" }).sort({ ano_cerimonia: 1 }).limit(1); ```
 ------
 
 12. Na campo "Vencedor", altere todos os valores com "true" para 1 e todos os valores "false" para 0.
 
-R: 3 vezes
+R: A alteração foi feita! O retorno efetuado pelo MongoDB shell foi:
+ ```
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 8528,
+  modifiedCount: 8528,
+  upsertedCount: 0
+}
+```
 
-Q:
-
+Q: ```
+db.registros.updateMany({ vencedor: "true" }, { $set: { vencedor: 1 } });
+db.registros.updateMany({ vencedor: "false" }, { $set: { vencedor: 0 } });
+```
 ------
 
 13. Em qual edição do Oscar "Crash" concorreu ao Oscar?
 
-R: 3 vezes
+R: na 78º edição
 
-Q:
+Q: ``` db.registros.find({ nome_do_filme: "Crash" }, { cerimonia: 1}); ``` //retone a cerimônia = 1 = true
 
 ------
 
 14. O filme Central do Brasil aparece no Oscar?
 
-R: 3 vezes
+R: Sim.
 
-Q:
+Q: ``` db.registros.find({ nome_do_filme: "Central Station" }).count() > 0; ``` //operador de comparação, pois se for maior que zero a quantidade de vezes, significa que aparece, então retorna true, senão retornaria false.
+ou
+``` db.registros.find({ nome_do_filme: "Central Station" }).count(); ``` //retorna 2 (pois foi indicado ao oscar em duas categorias)
 
 ------
 
