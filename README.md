@@ -630,8 +630,8 @@ Q:``` db.registros.find({ categoria: "ACTRESS" }).sort({ ano_cerimonia: -1 }).li
 
 R: Para a categoria Atriz, foi Janet Gaynor, em 1928. Por outro lado, para de fato a cateroria de Melhor Atriz, foi Mikey Madison, em 2025.
 
-Q: ``` db.registros.find({ categoria: "ACTRESS", vencedor: "true" }).sort({ ano_cerimonia: 1 }).limit(1); ```
-ou
+Q: ``` db.registros.find({ categoria: "ACTRESS", vencedor: "true" }).sort({ ano_cerimonia: 1 }).limit(1); ``` <br>
+ou <br>
  ``` db.registros.find({ categoria: "Best Actress", vencedor: "true" }).sort({ ano_cerimonia: 1 }).limit(1); ```
  
 ------
@@ -639,15 +639,13 @@ ou
 12. Na campo "Vencedor", altere todos os valores com "true" para 1 e todos os valores "false" para 0.
 
 R: A alteração foi feita! O retorno efetuado pelo MongoDB shell foi:
- ```
-{
+``` {
   acknowledged: true,
   insertedId: null,
   matchedCount: 8528,
   modifiedCount: 8528,
   upsertedCount: 0
-}
-```
+} ```
 
 Q: ```
 db.registros.updateMany({ vencedor: "true" }, { $set: { vencedor: 1 } });
