@@ -649,10 +649,9 @@ R: A alteração foi feita! O retorno efetuado pelo MongoDB shell foi:
 }
 ```
 
-Q: ```
-db.registros.updateMany({ vencedor: "true" }, { $set: { vencedor: 1 } });
-db.registros.updateMany({ vencedor: "false" }, { $set: { vencedor: 0 } });
-```
+Q: ``` db.registros.updateMany({ vencedor: "true" }, { $set: { vencedor: 1 } });
+db.registros.updateMany({ vencedor: "false" }, { $set: { vencedor: 0 } }); ```
+
 ------
 
 13. Em qual edição do Oscar "Crash" concorreu ao Oscar?
